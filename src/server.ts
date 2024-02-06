@@ -1,3 +1,4 @@
+import "dotenv/config";
 import {Type} from "@sinclair/typebox";
 import Fastify from "fastify";
 import path from "path";
@@ -7,7 +8,6 @@ import {
   stopGameServer,
   killGameServer,
 } from "./gameServer.js";
-import "dotenv";
 import { TypeBoxTypeProvider } from "@fastify/type-provider-typebox";
 
 console.log("beginning of server.ts");
@@ -73,7 +73,7 @@ fastify.after(() => {
     }
   }, async (request, reply) => {
     const { username, password } = request.body;
-    if (username === "admin" && password === process.env.ADMIN_PASSWORD) {
+    if (!(username === "admin" && password === process.env.ADMIN_PASSWORD)) {
       reply.status(401).send({ message: "invalid username or password" });
       return;
     }

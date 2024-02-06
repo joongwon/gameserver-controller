@@ -14,7 +14,7 @@
     "@fastify/type-provider-typebox": "^2.4.0",
     "@fastify/websocket": "^7.1.2",
     "@sinclair/typebox": "^0.25.21",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.4.1",
     "fastify": "^4.12.0",
     "pino-pretty": "^9.1.1",
     "typescript": "^4.9.4"

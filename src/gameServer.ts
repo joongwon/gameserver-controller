@@ -2,8 +2,6 @@ import { ChildProcess, spawn } from "child_process";
 
 let gameServer: ChildProcess | null = null;
 
-const binPath = process.env.BIN_PATH;
-
 export function startGameServer(
   broadcast: (type: string, message: string) => void
 ) {
@@ -11,6 +9,8 @@ export function startGameServer(
     broadcast("info", "이미 실행중");
     return;
   }
+
+  const binPath = process.env.BIN_PATH;
   if (binPath === undefined) {
     console.error("BIN_PATH environment variable is not set");
     broadcast("error", "server error; contact to server admin");
