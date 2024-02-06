@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "gameserver-controller",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "ts-node-esm src/server.ts | pino-pretty",
+    "build": "tsc",
+    "start": "nohup node dist/server.js &"
+  },
+  "private": true,
+  "dependencies": {
+    "@fastify/jwt": "^6.5.0",
+    "@fastify/static": "^6.6.1",
+    "@fastify/type-provider-typebox": "^2.4.0",
+    "@fastify/websocket": "^7.1.2",
+    "@sinclair/typebox": "^0.25.21",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.12.0",
+    "pino-pretty": "^9.1.1",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.1"
+  }
+}
