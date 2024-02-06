@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "ts-node-esm src/server.ts | pino-pretty",
     "build": "tsc",
-    "start": "nohup node dist/server.js &"
+    "start": "node dist/server.js"
   },
   "private": true,
   "dependencies": {
