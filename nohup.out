@@ -1,0 +1,89 @@
+yarn run v1.22.19
+$ node dist/server.js
+beginning of server.ts
+{"level":30,"time":1707219247390,"pid":258963,"hostname":"ahn-server","msg":"Server listening at http://0.0.0.0:3003"}
+{"level":30,"time":1707219250012,"pid":258963,"hostname":"ahn-server","reqId":"req-1","req":{"method":"GET","url":"/web/","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":38748},"msg":"incoming request"}
+{"level":30,"time":1707219250022,"pid":258963,"hostname":"ahn-server","reqId":"req-1","res":{"statusCode":200},"responseTime":9.93865704536438,"msg":"request completed"}
+{"level":30,"time":1707219250053,"pid":258963,"hostname":"ahn-server","reqId":"req-2","req":{"method":"GET","url":"/web/main.js","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":38752},"msg":"incoming request"}
+{"level":30,"time":1707219250054,"pid":258963,"hostname":"ahn-server","reqId":"req-2","res":{"statusCode":200},"responseTime":1.2608139514923096,"msg":"request completed"}
+{"level":30,"time":1707219250067,"pid":258963,"hostname":"ahn-server","reqId":"req-3","req":{"method":"GET","url":"/web/bg.jpg","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":38756},"msg":"incoming request"}
+{"level":30,"time":1707219250069,"pid":258963,"hostname":"ahn-server","reqId":"req-3","res":{"statusCode":200},"responseTime":1.5845330953598022,"msg":"request completed"}
+{"level":30,"time":1707219250070,"pid":258963,"hostname":"ahn-server","reqId":"req-4","req":{"method":"GET","url":"/web/actions.js","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":38766},"msg":"incoming request"}
+{"level":30,"time":1707219250071,"pid":258963,"hostname":"ahn-server","reqId":"req-4","res":{"statusCode":200},"responseTime":1.2564740180969238,"msg":"request completed"}
+{"level":30,"time":1707219250084,"pid":258963,"hostname":"ahn-server","reqId":"req-5","req":{"method":"GET","url":"/web/log.js","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":38780},"msg":"incoming request"}
+{"level":30,"time":1707219250084,"pid":258963,"hostname":"ahn-server","reqId":"req-5","res":{"statusCode":304},"responseTime":0.8073630332946777,"msg":"request completed"}
+{"level":30,"time":1707219250099,"pid":258963,"hostname":"ahn-server","reqId":"req-6","req":{"method":"GET","url":"/api/status","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":38792},"msg":"incoming request"}
+{"level":30,"time":1707219250099,"pid":258963,"hostname":"ahn-server","reqId":"req-6","res":{"statusCode":200},"responseTime":0.48427700996398926,"msg":"request completed"}
+{"level":30,"time":1707219259225,"pid":258963,"hostname":"ahn-server","reqId":"req-7","req":{"method":"POST","url":"/api/auth","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":44654},"msg":"incoming request"}
+{"level":30,"time":1707219259239,"pid":258963,"hostname":"ahn-server","reqId":"req-7","res":{"statusCode":200},"responseTime":13.592257022857666,"msg":"request completed"}
+{"level":30,"time":1707219262010,"pid":258963,"hostname":"ahn-server","reqId":"req-8","req":{"method":"POST","url":"/api/start","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":47648},"msg":"incoming request"}
+{"level":30,"time":1707219262029,"pid":258963,"hostname":"ahn-server","reqId":"req-8","res":{"statusCode":200},"responseTime":18.885939955711365,"msg":"request completed"}
+{"level":30,"time":1707219268131,"pid":258963,"hostname":"ahn-server","reqId":"req-9","req":{"method":"GET","url":"/web/","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":47650},"msg":"incoming request"}
+{"level":30,"time":1707219268133,"pid":258963,"hostname":"ahn-server","reqId":"req-9","res":{"statusCode":304},"responseTime":1.1899280548095703,"msg":"request completed"}
+{"level":30,"time":1707219268157,"pid":258963,"hostname":"ahn-server","reqId":"req-a","req":{"method":"GET","url":"/web/main.js","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":47656},"msg":"incoming request"}
+{"level":30,"time":1707219268158,"pid":258963,"hostname":"ahn-server","reqId":"req-a","res":{"statusCode":304},"responseTime":0.9170060157775879,"msg":"request completed"}
+{"level":30,"time":1707219268172,"pid":258963,"hostname":"ahn-server","reqId":"req-b","req":{"method":"GET","url":"/web/actions.js","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":47658},"msg":"incoming request"}
+{"level":30,"time":1707219268173,"pid":258963,"hostname":"ahn-server","reqId":"req-b","res":{"statusCode":304},"responseTime":0.6945220232009888,"msg":"request completed"}
+{"level":30,"time":1707219268176,"pid":258963,"hostname":"ahn-server","reqId":"req-c","req":{"method":"GET","url":"/web/bg.jpg","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":47672},"msg":"incoming request"}
+{"level":30,"time":1707219268177,"pid":258963,"hostname":"ahn-server","reqId":"req-c","res":{"statusCode":304},"responseTime":0.7266179323196411,"msg":"request completed"}
+{"level":30,"time":1707219268186,"pid":258963,"hostname":"ahn-server","reqId":"req-d","req":{"method":"GET","url":"/web/log.js","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":47674},"msg":"incoming request"}
+{"level":30,"time":1707219268187,"pid":258963,"hostname":"ahn-server","reqId":"req-d","res":{"statusCode":304},"responseTime":0.6681469678878784,"msg":"request completed"}
+{"level":30,"time":1707219268210,"pid":258963,"hostname":"ahn-server","reqId":"req-e","req":{"method":"GET","url":"/api/status","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":47676},"msg":"incoming request"}
+{"level":30,"time":1707219268210,"pid":258963,"hostname":"ahn-server","reqId":"req-e","res":{"statusCode":200},"responseTime":0.32555997371673584,"msg":"request completed"}
+{"level":30,"time":1707219270225,"pid":258963,"hostname":"ahn-server","reqId":"req-f","req":{"method":"GET","url":"/ws/status","hostname":"pal.freleefty.org","remoteAddress":"127.0.0.1","remotePort":47682},"msg":"incoming request"}
+{"level":30,"time":1707219270227,"pid":258963,"hostname":"ahn-server","msg":"open status socket"}
+{"level":30,"time":1707219270241,"pid":258963,"hostname":"ahn-server","reqId":"req-g","req":{"method":"GET","url":"/ws/log","hostname":"pal.freleefty.org","remoteAddress":"127.0.0.1","remotePort":47696},"msg":"incoming request"}
+{"level":30,"time":1707219270242,"pid":258963,"hostname":"ahn-server","msg":"open log socket"}
+{"level":30,"time":1707234296733,"pid":258963,"hostname":"ahn-server","reqId":"req-h","req":{"method":"POST","url":"/api/stop","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":53942},"msg":"incoming request"}
+{"level":30,"time":1707234296823,"pid":258963,"hostname":"ahn-server","reqId":"req-h","res":{"statusCode":401},"responseTime":76.73485100269318,"msg":"request completed"}
+{"level":30,"time":1707234300660,"pid":258963,"hostname":"ahn-server","reqId":"req-i","req":{"method":"POST","url":"/api/auth","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":55000},"msg":"incoming request"}
+{"level":30,"time":1707234300698,"pid":258963,"hostname":"ahn-server","reqId":"req-i","res":{"statusCode":200},"responseTime":37.93584406375885,"msg":"request completed"}
+{"level":30,"time":1707234303037,"pid":258963,"hostname":"ahn-server","reqId":"req-j","req":{"method":"POST","url":"/api/stop","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":55004},"msg":"incoming request"}
+{"level":30,"time":1707234303053,"pid":258963,"hostname":"ahn-server","reqId":"req-j","res":{"statusCode":200},"responseTime":15.97252905368805,"msg":"request completed"}
+{"level":30,"time":1707234334278,"pid":258963,"hostname":"ahn-server","msg":"close status socket"}
+{"level":30,"time":1707234334280,"pid":258963,"hostname":"ahn-server","msg":"close log socket"}
+{"level":30,"time":1707299822002,"pid":258963,"hostname":"ahn-server","reqId":"req-k","req":{"method":"GET","url":"/web/","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":41862},"msg":"incoming request"}
+{"level":30,"time":1707299822024,"pid":258963,"hostname":"ahn-server","reqId":"req-k","res":{"statusCode":304},"responseTime":22.196644067764282,"msg":"request completed"}
+{"level":30,"time":1707299822073,"pid":258963,"hostname":"ahn-server","reqId":"req-l","req":{"method":"GET","url":"/web/main.js","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":41878},"msg":"incoming request"}
+{"level":30,"time":1707299822076,"pid":258963,"hostname":"ahn-server","reqId":"req-l","res":{"statusCode":304},"responseTime":2.9308691024780273,"msg":"request completed"}
+{"level":30,"time":1707299822107,"pid":258963,"hostname":"ahn-server","reqId":"req-m","req":{"method":"GET","url":"/web/actions.js","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":41888},"msg":"incoming request"}
+{"level":30,"time":1707299822109,"pid":258963,"hostname":"ahn-server","reqId":"req-m","res":{"statusCode":304},"responseTime":1.6678318977355957,"msg":"request completed"}
+{"level":30,"time":1707299822121,"pid":258963,"hostname":"ahn-server","reqId":"req-n","req":{"method":"GET","url":"/web/bg.jpg","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":41892},"msg":"incoming request"}
+{"level":30,"time":1707299822123,"pid":258963,"hostname":"ahn-server","reqId":"req-n","res":{"statusCode":304},"responseTime":2.159993886947632,"msg":"request completed"}
+{"level":30,"time":1707299822138,"pid":258963,"hostname":"ahn-server","reqId":"req-o","req":{"method":"GET","url":"/web/log.js","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":41902},"msg":"incoming request"}
+{"level":30,"time":1707299822138,"pid":258963,"hostname":"ahn-server","reqId":"req-o","res":{"statusCode":304},"responseTime":0.44470882415771484,"msg":"request completed"}
+{"level":30,"time":1707299822165,"pid":258963,"hostname":"ahn-server","reqId":"req-p","req":{"method":"GET","url":"/api/status","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":41916},"msg":"incoming request"}
+{"level":30,"time":1707299822166,"pid":258963,"hostname":"ahn-server","reqId":"req-p","res":{"statusCode":200},"responseTime":1.2901699542999268,"msg":"request completed"}
+{"level":30,"time":1707299822190,"pid":258963,"hostname":"ahn-server","reqId":"req-q","req":{"method":"GET","url":"/ws/status","hostname":"pal.freleefty.org","remoteAddress":"127.0.0.1","remotePort":41920},"msg":"incoming request"}
+{"level":30,"time":1707299822192,"pid":258963,"hostname":"ahn-server","msg":"open status socket"}
+{"level":30,"time":1707299822208,"pid":258963,"hostname":"ahn-server","reqId":"req-r","req":{"method":"GET","url":"/ws/log","hostname":"pal.freleefty.org","remoteAddress":"127.0.0.1","remotePort":41934},"msg":"incoming request"}
+{"level":30,"time":1707299822209,"pid":258963,"hostname":"ahn-server","msg":"open log socket"}
+{"level":30,"time":1707299827184,"pid":258963,"hostname":"ahn-server","reqId":"req-s","req":{"method":"POST","url":"/api/auth","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":41942},"msg":"incoming request"}
+{"level":30,"time":1707299827186,"pid":258963,"hostname":"ahn-server","reqId":"req-s","res":{"statusCode":401},"responseTime":1.2104649543762207,"msg":"request completed"}
+{"level":30,"time":1707299838734,"pid":258963,"hostname":"ahn-server","reqId":"req-t","req":{"method":"POST","url":"/api/auth","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":46708},"msg":"incoming request"}
+{"level":30,"time":1707299838736,"pid":258963,"hostname":"ahn-server","reqId":"req-t","res":{"statusCode":200},"responseTime":2.3523168563842773,"msg":"request completed"}
+{"level":30,"time":1707299844402,"pid":258963,"hostname":"ahn-server","reqId":"req-u","req":{"method":"POST","url":"/api/start","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":54952},"msg":"incoming request"}
+{"level":30,"time":1707299844444,"pid":258963,"hostname":"ahn-server","reqId":"req-u","res":{"statusCode":200},"responseTime":41.74108910560608,"msg":"request completed"}
+{"level":30,"time":1707299926716,"pid":258963,"hostname":"ahn-server","reqId":"req-v","req":{"method":"POST","url":"/api/stop","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":60428},"msg":"incoming request"}
+{"level":30,"time":1707299926718,"pid":258963,"hostname":"ahn-server","reqId":"req-v","res":{"statusCode":200},"responseTime":1.6878588199615479,"msg":"request completed"}
+{"level":30,"time":1707300199527,"pid":258963,"hostname":"ahn-server","reqId":"req-w","req":{"method":"POST","url":"/api/start","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":49092},"msg":"incoming request"}
+{"level":30,"time":1707300199538,"pid":258963,"hostname":"ahn-server","reqId":"req-w","res":{"statusCode":200},"responseTime":10.84939193725586,"msg":"request completed"}
+{"level":30,"time":1707310519033,"pid":258963,"hostname":"ahn-server","reqId":"req-x","req":{"method":"POST","url":"/api/stop","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":51226},"msg":"incoming request"}
+{"level":30,"time":1707310519092,"pid":258963,"hostname":"ahn-server","reqId":"req-x","res":{"statusCode":401},"responseTime":53.394983768463135,"msg":"request completed"}
+{"level":30,"time":1707310521868,"pid":258963,"hostname":"ahn-server","reqId":"req-y","req":{"method":"POST","url":"/api/auth","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":45192},"msg":"incoming request"}
+{"level":30,"time":1707310521875,"pid":258963,"hostname":"ahn-server","reqId":"req-y","res":{"statusCode":200},"responseTime":6.682825088500977,"msg":"request completed"}
+{"level":30,"time":1707310522681,"pid":258963,"hostname":"ahn-server","reqId":"req-z","req":{"method":"POST","url":"/api/stop","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":45194},"msg":"incoming request"}
+{"level":30,"time":1707310522692,"pid":258963,"hostname":"ahn-server","reqId":"req-z","res":{"statusCode":200},"responseTime":10.38762378692627,"msg":"request completed"}
+{"level":30,"time":1707310561315,"pid":258963,"hostname":"ahn-server","reqId":"req-10","req":{"method":"POST","url":"/api/start","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":37284},"msg":"incoming request"}
+{"level":30,"time":1707310561377,"pid":258963,"hostname":"ahn-server","reqId":"req-10","res":{"statusCode":200},"responseTime":61.755544900894165,"msg":"request completed"}
+{"level":30,"time":1707316736178,"pid":258963,"hostname":"ahn-server","reqId":"req-11","req":{"method":"POST","url":"/api/stop","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":46480},"msg":"incoming request"}
+{"level":30,"time":1707316736206,"pid":258963,"hostname":"ahn-server","reqId":"req-11","res":{"statusCode":401},"responseTime":21.974036931991577,"msg":"request completed"}
+{"level":30,"time":1707316739584,"pid":258963,"hostname":"ahn-server","reqId":"req-12","req":{"method":"POST","url":"/api/auth","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":46494},"msg":"incoming request"}
+{"level":30,"time":1707316739589,"pid":258963,"hostname":"ahn-server","reqId":"req-12","res":{"statusCode":200},"responseTime":5.731761932373047,"msg":"request completed"}
+{"level":30,"time":1707316740923,"pid":258963,"hostname":"ahn-server","reqId":"req-13","req":{"method":"POST","url":"/api/stop","hostname":"pal","remoteAddress":"127.0.0.1","remotePort":44238},"msg":"incoming request"}
+{"level":30,"time":1707316740924,"pid":258963,"hostname":"ahn-server","reqId":"req-13","res":{"statusCode":200},"responseTime":1.1904609203338623,"msg":"request completed"}
+{"level":30,"time":1707316825091,"pid":258963,"hostname":"ahn-server","msg":"close status socket"}
+{"level":30,"time":1707316825091,"pid":258963,"hostname":"ahn-server","msg":"close log socket"}
+Killed
+error Command failed with exit code 137.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

@@ -1,4 +1,6 @@
 import { ChildProcess, spawn } from "child_process";
+import { readFile } from "node:fs/promises";
+import * as os from "node:os";
 
 let gameServer: ChildProcess | null = null;
 
@@ -58,6 +60,39 @@ export function killGameServer() {
     gameServer?.kill('SIGKILL');
 }
 
-export function isGameServerConnected() {
-  return gameServer !== null;
+export async function gameServerStatus() {
+  const freemem = os.freemem();
+  const totalmem = os.totalmem();
+
+  if (gameServer === null) {
+    return {
+      status: "off",
+      freemem: freemem,
+      totalmem: totalmem,
+    };
+  }
+
+  const pid = gameServer.pid;
+  const statFileName = `/proc/${pid}/statm`;
+  try {
+    const statContent = await readFile(statFileName, { encoding: "utf-8" });
+    const statArray = statContent.split(' ').map(elem => parseInt(elem));
+
+    // all measured in bytes
+    const vm = statArray[0] * 4096;
+    const rss = statArray[1] * 4096;
+    return {
+      status: "on",
+      vm: vm,
+      rss: rss,
+      freemem: freemem,
+      totalmem: totalmem,
+    };
+  } catch (e) {
+    return {
+      status: "on",
+      freemem: freemem,
+      totalmem: totalmem,
+    };
+  }
 }

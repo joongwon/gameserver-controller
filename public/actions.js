@@ -1,4 +1,5 @@
 import {addLog} from "./log.js";
+import {addData,clearData} from "./chart.js";
 
 export function sendStart() {
   fetch("/api/start", {
@@ -91,8 +92,8 @@ export function checkStatusOnce() {
       replaceBadge("error")
     }
   }).then(j => {
-    const connected = j.connected;
-    replaceBadge(connected ? "on" : "off");
+    replaceBadge(j.status);
+    addData(j);
   });
 }
 
@@ -116,17 +117,16 @@ function startSocketCommunication(absolutePath, onMessage) {
 
 export function startCheckStatus() {
   checkStatusOnce();
-  let currentStatus = null;
   startSocketCommunication("/ws/status", e => {
-    const status = e.data.toString();
-    if (status !== currentStatus) {
-      replaceBadge(status);
-    }
+    const j = JSON.parse(e.data.toString());
+    replaceBadge(j.status);
+    addData(j);
   });
 }
 
 export function clearLog() {
   document.getElementById("log").replaceChildren();
+  clearData();
 }
 
 export function onFilterChange(type, checked) {

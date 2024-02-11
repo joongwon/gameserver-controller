@@ -31,13 +31,23 @@
             width: 100vw;
             z-index: -1;
         }
+        .mygrid {
+          display: grid;
+          grid-template:
+            "hd hd" auto
+            "btn btn" auto
+            "chart log" 1fr /
+            1fr 1fr;
+          gap: 1em;
+          height: 100vh;
+        }
     </style>
 </head>
 <body >
 <div class="background"></div>
-<div class="container d-flex flex-column gap-1 vh-100 p-2">
-    <h1>팰월드 서버 컨트롤러</h1>
-    <div>
+<div class="mygrid">
+    <h1 style="grid-area:hd">팰월드 서버 컨트롤러</h1>
+    <div style=grid-area:btn">
         <div class="btn-group">
             <button class="btn btn-primary" id="btn-open-login" data-bs-toggle="modal" data-bs-target="#login-modal">로그인</button>
             <button class="btn btn-success" id="btn-start" data-need-token disabled>시작</button>
@@ -67,8 +77,12 @@
             <label class="btn btn-outline-info" for="btn-check-ping">ping</label>
         </div>
     </div>
-    <ul id="log" class="list-group font-mono overflow-auto flex-fill">
-    </ul>
+      <div class="col" style="position: relative; height: 100%; grid-area: chart">
+        <canvas id="chart"></canvas>
+      </div>
+      <ul id="log" class="col list-group font-mono overflow-y-auto" style="grid-area:log">
+      </ul>
+    </div>
     <div class="modal fade" id="login-modal">
         <div class="modal-dialog">
             <div class="modal-content">

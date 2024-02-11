@@ -3,10 +3,10 @@ import {Type} from "@sinclair/typebox";
 import Fastify from "fastify";
 import path from "path";
 import {
-  isGameServerConnected,
   startGameServer,
   stopGameServer,
   killGameServer,
+  gameServerStatus,
 } from "./gameServer.js";
 import { TypeBoxTypeProvider } from "@fastify/type-provider-typebox";
 
@@ -36,8 +36,8 @@ function broadcast(type: string, message: string) {
 }
 
 fastify.after(() => {
-  fastify.get("/api/status", (request, reply) => {
-    reply.send({ connected: isGameServerConnected() });
+  fastify.get("/api/status", async (request, reply) => {
+    reply.send(await gameServerStatus());
   });
 
   fastify.post("/api/start", async (request, reply) => {
@@ -101,9 +101,10 @@ fastify.after(() => {
 
   fastify.get("/ws/status", { websocket: true }, (connection) => {
     fastify.log.info("open status socket");
-    const intervalId = setInterval(() => {
-      connection.socket.send(isGameServerConnected() ? "on" : "off");
-    }, 5000);
+    const send = async () => {
+      connection.socket.send(JSON.stringify(await gameServerStatus()));
+    };
+    const intervalId = setInterval(send, 5000);
     connection.socket.on("close", () => {
       clearInterval(intervalId);
       fastify.log.info("close status socket");
